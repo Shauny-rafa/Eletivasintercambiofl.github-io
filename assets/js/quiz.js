@@ -307,7 +307,11 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        let destino = (respostas.includes("Frio")) ? "Canadá" : "Austrália";
-        quizResult.textContent = `Seu destino ideal é: ${destino}`;
+fetch('destinos.json')
+  .then(response => response.json())
+  .then(destinos => {
+    console.log("Lista de destinos disponíveis:", destinos);
+  })
+  .catch(error => console.error("Erro ao carregar os destinos:", error));
     };
 });
