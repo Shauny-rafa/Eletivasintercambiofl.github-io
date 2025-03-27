@@ -1,26 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intercâmbio FL</title>
-    <link rel="stylesheet" href="styles/global.css">
-    <script defer src="scripts/main.js"></script>
+    <title>Intercâmbio - Explore o Mundo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-        <h1>Intercâmbio Fácil</h1>
+        <h1>Intercâmbio</h1>
         <nav>
-            <a href="quiz.html">Quiz</a>
-            <a href="comparador.html">Comparador de Custos</a>
-            <a href="faq.html">FAQ</a>
+            <a href="#">Home</a>
+            <a href="#">Destinos</a>
+            <a href="#">Contato</a>
         </nav>
     </header>
-    
-    <section id="destinos populares">
-        <h2>Alguns Destinos</h2>
-        <div id="destinos-container"></div>
+
+    <section id="hero">
+        <h1>Explore o Mundo com Nossas Viagens</h1>
+        <p>Descubra oportunidades únicas de morar em outro país.</p>
+        <button>Saiba Mais</button>
     </section>
+
+    <section id="quiz">
+        <h2>Qual destino combina com você?</h2>
+        <div id="quiz-container"></div>
+        <button id="quiz-submit">Ver Resultado</button>
+        <p id="quiz-result"></p>
+    </section>
+
+    <section id="api-section">
+        <h2>Compare Custo de Vida e Passagens</h2>
+        <input type="text" id="destino-input" placeholder="Digite um destino">
+        <button id="buscar-dados">Buscar</button>
+        <div id="api-results"></div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/quiz.js"></script>
+    <script src="assets/js/api.js"></script>
 </body>
 </html>
